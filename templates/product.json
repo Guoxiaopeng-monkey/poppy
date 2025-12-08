@@ -1,0 +1,471 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "main": {
+      "type": "main-product",
+      "blocks": {
+        "title": {
+          "type": "title",
+          "settings": {}
+        },
+        "price": {
+          "type": "price",
+          "settings": {
+            "show_installments": false,
+            "show_tax_and_shipping": false,
+            "enable_product_reviews_by_price": true
+          }
+        },
+        "vendor": {
+          "type": "vendor",
+          "disabled": true,
+          "settings": {}
+        },
+        "divider": {
+          "type": "divider",
+          "settings": {
+            "show_in_quickbuy": false
+          }
+        },
+        "pop_up_LTjrma": {
+          "type": "pop-up",
+          "settings": {
+            "text": "sizeguide",
+            "style": "primary",
+            "page": "",
+            "show_in_quickbuy": true
+          }
+        },
+        "variant-picker": {
+          "type": "variant-picker",
+          "settings": {
+            "show_single": false,
+            "selector_style": "listed",
+            "dynamic_availability": "show",
+            "enable_size_chart": true,
+            "size_chart_label": "Size guide",
+            "size_chart_variant": "Size",
+            "size_chart_page": "hoodies-size-chart"
+          }
+        },
+        "buy-buttons": {
+          "type": "buy-buttons",
+          "settings": {
+            "show_quantity_selector": true,
+            "enable_payment_button": true,
+            "show_backorder_text": false,
+            "show_pickup_availability": true,
+            "show_gift_card_recipient": false
+          }
+        },
+        "description": {
+          "type": "description",
+          "settings": {
+            "show_in_tab": false,
+            "open_tab": false,
+            "icon": "",
+            "show_in_quickbuy": false
+          }
+        },
+        "accordion_VfdPWy": {
+          "type": "accordion",
+          "settings": {
+            "title": "WASH METHODS",
+            "icon": "",
+            "content": "<p>WASH METHODS</p>",
+            "page": "",
+            "custom_liquid": "",
+            "open": false,
+            "variant_content": false,
+            "show_in_quickbuy": false
+          }
+        },
+        "accordion_cqtPGX": {
+          "type": "accordion",
+          "settings": {
+            "title": "SHIPPING & RETURN",
+            "icon": "",
+            "content": "<p><strong>[shipping-icon]Shipping Time & Delivery Fees</strong></p><p>•  All orders take 5–7 business days to process before shipping<br/>•  We do not ship to P.O. boxes</p><p> </p><p><strong>Standard Shipping</strong><br/>•  Free on orders over $69 USD<br/>•  $9.99 USD flat fee for orders under $69<br/>•  Delivery time: 6–15 business days (after processing)</p><p> </p><p><strong>Express Shipping</strong><br/>•  Free on orders over $179 USD <br/>•  $39–$45 USD for orders under $179 (based on location)<br/>•  Delivery time: 4–8 business days (after processing)<br/>Please note: All Express Shipping orders—free or paid—may be subject to local taxes, which are the buyer’s responsibility</p><p></p><p><br/><strong>⚠️ Sunglasses Shipping Notice:</strong> Due to customs regulations, sunglasses can only ship via Standard Shipping (typically 8–10 business days after processing). Express shipping is not available.<strong>⚠️</strong><br/><br/></p><p>For full details, read our full <a href=\"https://www.elevenoasis.com/policies/shipping-policy\" target=\"_blank\"><span style=\"text-decoration:underline\">Shipping & Delivery Policy</span></a></p><p></p><p></p><p></p><p></p><p></p><p><strong><br/>[return-icon]Free Return Guarantee</strong></p><p>• Free return within 30 days of delivery<br/>• Email <a href=\"mailto:support@elevenoasis.com\"><span style=\"text-decoration:underline\">support@elevenoasis.com</span></a> to initiate your return<br/>• Items must be unworn, unwashed, with original tags attached<br/>• Orders cannot be cancelled once shipped<br/> </p><p>For complete details, see our <a href=\"https://www.elevenoasis.com/policies/shipping-policy\"><span style=\"text-decoration:underline\">Shipping Policy</span></a> and <a href=\"https://www.elevenoasis.com/policies/refund-policy\"><span style=\"text-decoration:underline\">Return Policy</span></a><a href=\"https://www.elevenoasis.com/policies/shipping-policy\">.</a></p>",
+            "page": "",
+            "custom_liquid": "",
+            "open": false,
+            "variant_content": false,
+            "show_in_quickbuy": false
+          }
+        },
+        "accordion_xg6dhq": {
+          "type": "accordion",
+          "settings": {
+            "title": "SECURE PAYMENT",
+            "icon": "",
+            "content": "<p>We accept major credit cards, PayPal, and other standard payment methods available at checkout.</p><p>[secure-icon]</p><p><strong>Trackable Logistics</strong></p><p>Need to check the delivery status of your order? We will send a Shipping Confirmation email to you as soon as your item ships. You can also check our Track My Order page. If you encounter any issues or have any questions regarding your purchase, please do not hesitate to contact us immediately by emailing <a href=\"mailto:support@elevenoasis.com\"><span style=\"text-decoration:underline\">support@elevenoasis.com</span>.</a><br/><br/><strong>Helpful & Friendly Customer Service</strong></p><p>Need to talk to someone? We have a team of customer service professionals ready to answer your questions about sizing, order submission and deliveries. Contact us by emailing <a href=\"mailto:support@elevenoasis.com\"><span style=\"text-decoration:underline\">support@elevenoasis.com</span>.</a><br/><br/><strong>Privacy Protection </strong></p><p>Eleven Oasis will never share your personal information with unaffiliated third parties.</p><p>For more information on privacy, please click here: <a href=\"https://www.elevenoasis.com/policies/privacy-policy\"><span style=\"text-decoration:underline\">Privacy Policy</span></a></p>",
+            "page": "",
+            "custom_liquid": "",
+            "open": false,
+            "variant_content": false,
+            "show_in_quickbuy": false
+          }
+        },
+        "icon_columns_T7XVkN": {
+          "type": "icon-columns",
+          "settings": {
+            "icon_size": "medium",
+            "text_size": "sm",
+            "enable_box": true,
+            "box_color": "#f4f4f4",
+            "icon_1": "plane",
+            "icon_1_color": "rgba(0,0,0,0)",
+            "icon_1_heading": "$69 Free Shipping",
+            "icon_1_text": "",
+            "icon_2": "return",
+            "icon_2_color": "rgba(0,0,0,0)",
+            "icon_2_heading": "30 Days Free Return",
+            "icon_2_text": "",
+            "icon_3": "gift",
+            "icon_3_color": "rgba(0,0,0,0)",
+            "icon_3_heading": "Free Gift For Every Oreder",
+            "icon_3_text": "",
+            "show_in_quickbuy": true
+          }
+        }
+      },
+      "block_order": [
+        "title",
+        "price",
+        "vendor",
+        "divider",
+        "pop_up_LTjrma",
+        "variant-picker",
+        "buy-buttons",
+        "description",
+        "accordion_VfdPWy",
+        "accordion_cqtPGX",
+        "accordion_xg6dhq",
+        "icon_columns_T7XVkN"
+      ],
+      "settings": {
+        "show_breadcrumbs": true,
+        "select_first_variant": true,
+        "show_location_underneath": false,
+        "inventory_transfers_enable": true,
+        "enable_sticky_columns": true,
+        "enable_sticky_atc": true,
+        "sticky_atc_position": "end",
+        "sticky_atc_mobile": true,
+        "sticky_atc_behavior": "add_to_cart",
+        "sticky_atc_button_style": "secondary",
+        "gallery_size": "medium",
+        "gallery_layout": "carousel-under",
+        "enable_zoom": true,
+        "show_alt_text": false,
+        "alt_text_icon": "",
+        "show_variant_media_label": true,
+        "enable_video_autoplay": true,
+        "enable_video_looping": false,
+        "enable_media_grouping": false,
+        "media_grouping_option": "Color,Colour,Couleur,Farbe"
+      }
+    },
+    "slideshow_f4cwni": {
+      "type": "slideshow",
+      "blocks": {
+        "image_aeBFCm": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/gift2-pc.webp",
+            "mobile_image": "shopify://shop_images/gifts2-mo.webp",
+            "slide_link": "",
+            "subheading": "",
+            "title": "",
+            "heading_max_width": 15,
+            "title_size": 84,
+            "title_size_mobile": 46,
+            "use_h1": false,
+            "text": "",
+            "enlarge_text": true,
+            "button_label_1": "",
+            "button_url_1": "",
+            "button_label_2": "",
+            "button_url_2": "",
+            "text_alignment": "center center"
+          }
+        }
+      },
+      "block_order": [
+        "image_aeBFCm"
+      ],
+      "name": "Slideshow",
+      "settings": {
+        "height": "adapt",
+        "height_desktop": 600,
+        "height_mobile": 460,
+        "full_width": true,
+        "mobile_overlay_under": false,
+        "overlay_style": "shadow",
+        "transition": "fade",
+        "navigation": "arrows",
+        "autoplay": true,
+        "autoplay_speed": 7,
+        "accessibility_info": ""
+      }
+    },
+    "1764501366df2f3619": {
+      "type": "apps",
+      "settings": {
+        "full_width": false,
+        "show_space": true
+      }
+    },
+    "featured_collection_BGGntR": {
+      "type": "featured-collection",
+      "name": "Featured collection",
+      "settings": {
+        "title": "COMPLETE THE LOOK",
+        "collection": "womens-bags",
+        "show_vendor": false,
+        "enable_carousel": true,
+        "grid": 5,
+        "rows": 1,
+        "color_scheme": "default",
+        "show_view_all": true,
+        "full_width": true
+      }
+    },
+    "related-products": {
+      "type": "related-products",
+      "settings": {
+        "title": "YOU MAY ALSO LIKE",
+        "show_vendor": false,
+        "grid": 5
+      }
+    },
+    "logo_list_64xUBh": {
+      "type": "logo-list",
+      "blocks": {
+        "logo_RPbw6N": {
+          "type": "logo",
+          "settings": {
+            "image": "shopify://shop_images/1.svg",
+            "image_width": 50,
+            "link": "",
+            "title": "120,000+SHIRTS SOLD"
+          }
+        },
+        "logo_C8aNYH": {
+          "type": "logo",
+          "settings": {
+            "image": "shopify://shop_images/2.svg",
+            "image_width": 50,
+            "link": "",
+            "title": "17,800+PRODUCT REVIEWS"
+          }
+        },
+        "logo_BAzwxE": {
+          "type": "logo",
+          "settings": {
+            "image": "shopify://shop_images/3.svg",
+            "image_width": 50,
+            "link": "",
+            "title": "50+WEEKLY STYLES"
+          }
+        },
+        "logo_JGL69J": {
+          "type": "logo",
+          "settings": {
+            "image": "shopify://shop_images/4.svg",
+            "image_width": 50,
+            "link": "",
+            "title": "75,000+HAPPY COSUMERS"
+          }
+        }
+      },
+      "block_order": [
+        "logo_RPbw6N",
+        "logo_C8aNYH",
+        "logo_BAzwxE",
+        "logo_JGL69J"
+      ],
+      "name": "Logo list",
+      "settings": {
+        "title": "",
+        "image_opacity": 75,
+        "color_scheme": "default"
+      }
+    },
+    "1764501044402347a6": {
+      "type": "apps",
+      "settings": {
+        "full_width": false,
+        "show_space": true
+      }
+    },
+    "collapsible_tabs_aBFypJ": {
+      "type": "collapsible-tabs",
+      "blocks": {
+        "question_m4RttV": {
+          "type": "question",
+          "settings": {
+            "title": "How long will my order take to arrive?",
+            "answer": "<p>Order processing takes 5-7 business days. This is the time needed to prepare your order before shipping. Shipping times then vary by region:</p><p><strong>Standard Shipping:</strong></p><ul><li>United States: 6-15 business days</li><li>Canada: 8-15 business days</li><li>Norway & Greece: 8-10 business days</li><li>Rest of world: 6-15 business days</li></ul><p><strong>Express Shipping:</strong></p><ul><li>Canada: 4-8 business days</li><li>Rest of world: 4-8 business days</li></ul><p><strong>Total Delivery Time = Processing Time (5-7 business days) + Shipping Time (varies by region)</strong></p><p>For example, if you're based in the USA with standard shipping:</p><ul><li>Processing time: up to 7 business days</li><li>Standard shipping time: up to 15 business days</li><li>Maximum total wait time: 22 business days</li></ul><p>Please note that peak seasons and sales events may also affect processing times.</p><p> </p><p>For complete details, see our <a href=\"https://www.elevenoasis.com/policies/shipping-policy\"><span style=\"text-decoration:underline\">Shipping Policy</span> and </a><a href=\"https://www.elevenoasis.com/policies/refund-policy\"><span style=\"text-decoration:underline\">Return Policy</span></a><a href=\"https://www.elevenoasis.com/policies/shipping-policy\">.</a></p>"
+          }
+        },
+        "question_BEjRLD": {
+          "type": "question",
+          "settings": {
+            "title": "What payment methods do you accept?",
+            "answer": "<p>We accept major credit cards, PayPal, and other standard payment methods available at checkout.</p><p> </p><p>For complete details, see our <a href=\"https://www.elevenoasis.com/pages/payment-methods\"><span style=\"text-decoration:underline\">Payment Methods</span></a>.</p>"
+          }
+        },
+        "question_yrqMWg": {
+          "type": "question",
+          "settings": {
+            "title": "How do I apply a discount code?",
+            "answer": "<p>Promotional codes can be applied during checkout. Simply enter your code in the discount field before completing your purchase.</p>"
+          }
+        },
+        "question_3wQFVb": {
+          "type": "question",
+          "settings": {
+            "title": "Can I modify my order after placing it?",
+            "answer": "<p>Yes, you can modify your order (size, style, address, etc.) if it hasn't been dispatched yet. If your order has already been dispatched, you'll need to place a new order. Contact our customer service team at <a href=\"mailto:support@elevenoasis.com\"><span style=\"text-decoration:underline\">support@elevenoasis.com</span></a> to get this process started.</p>"
+          }
+        },
+        "question_9BmVm6": {
+          "type": "question",
+          "settings": {
+            "title": "How do I track my order?",
+            "answer": "<p>Please visit our <a href=\"https://www.elevenoasis.com/apps/17TRACK\"><span style=\"text-decoration:underline\">Track My Order</span></a> page, or contact our customer service team at <a href=\"mailto:support@elevenoasis.com\"><span style=\"text-decoration:underline\">support@elevenoasis.com</span></a>. We aim to respond within 48 business hours but are usually much faster. Please check your spam/junk folders for our replies.</p>"
+          }
+        },
+        "question_ji4yrQ": {
+          "type": "question",
+          "settings": {
+            "title": "Couldn't find the answer you are looking for? Click here.",
+            "answer": "<p><a href=\"https://www.elevenoasis.com/pages/faq\"><span style=\"text-decoration:underline\">Click here</span></a>to access all our Frequently Asked Questions.</p>"
+          }
+        }
+      },
+      "block_order": [
+        "question_m4RttV",
+        "question_BEjRLD",
+        "question_yrqMWg",
+        "question_3wQFVb",
+        "question_9BmVm6",
+        "question_ji4yrQ"
+      ],
+      "name": "Collapsible tabs-faqs",
+      "settings": {
+        "title": "FAQs",
+        "open_tab": false,
+        "enable_faq_schema": true
+      }
+    },
+    "multi_column_JrtTBz": {
+      "type": "multi-column",
+      "blocks": {
+        "text_block_WNYrgk": {
+          "type": "text_block",
+          "settings": {
+            "enable_media": true,
+            "image": "shopify://shop_images/product-kol_3.jpg",
+            "title": "",
+            "text": "",
+            "button_label": "",
+            "link": "https://www.elevenoasis.com/products/tall-mens-coconut-tree-casual-breathable-short-sleeve-hawaiian-shirt"
+          }
+        },
+        "text_block_Jaqdhy": {
+          "type": "text_block",
+          "settings": {
+            "enable_media": true,
+            "image": "shopify://shop_images/product-kol_2.jpg",
+            "title": "",
+            "text": "",
+            "button_label": "",
+            "link": "https://www.elevenoasis.com/collections/add-ons/products/hawaiian-coconut-tree-cowboys-mens-short-sleeve-tops-c0178"
+          }
+        },
+        "text_block_pFwifz": {
+          "type": "text_block",
+          "settings": {
+            "enable_media": true,
+            "image": "shopify://shop_images/product-kol_4.jpg",
+            "title": "",
+            "text": "",
+            "button_label": "",
+            "link": "https://www.elevenoasis.com/products/mens-trapper-keeper-inspired-colorful-geometric-shapes-short-sleeve-shirt"
+          }
+        },
+        "text_block_6dGCdH": {
+          "type": "text_block",
+          "settings": {
+            "enable_media": true,
+            "image": "shopify://shop_images/product-kol_1_eaec5fe1-f021-4888-aa67-656abc9f5ee4.jpg",
+            "title": "",
+            "text": "",
+            "button_label": "",
+            "link": "https://www.elevenoasis.com/products/tall-mens-basic-50s-style-bowling-shirt"
+          }
+        },
+        "text_block_eTGLft": {
+          "type": "text_block",
+          "settings": {
+            "enable_media": true,
+            "image": "shopify://shop_images/product-kol_1.jpg",
+            "title": "",
+            "text": "",
+            "button_label": "",
+            "link": "https://www.elevenoasis.com/products/tall-mens-nightmare-scream-short-sleeve-shirt"
+          }
+        },
+        "text_block_Pd8c7V": {
+          "type": "text_block",
+          "settings": {
+            "enable_media": true,
+            "image": "shopify://shop_images/pajama.webp",
+            "title": "",
+            "text": "",
+            "button_label": "",
+            "link": "shopify://products/men-s-solid-color-linen-half-sleeve-elastic-waist-wide-leg-setvacation-slow-living-linen-ensemble"
+          }
+        }
+      },
+      "block_order": [
+        "text_block_WNYrgk",
+        "text_block_Jaqdhy",
+        "text_block_pFwifz",
+        "text_block_6dGCdH",
+        "text_block_eTGLft",
+        "text_block_Pd8c7V"
+      ],
+      "name": "Multi-column",
+      "settings": {
+        "title": "JOIN THE ELEVEN OASIS COMMUNITY",
+        "media_aspect_ratio": "1",
+        "media_width": 340,
+        "text_alignment": "center",
+        "button_style": "primary",
+        "color_scheme": "default"
+      }
+    }
+  },
+  "order": [
+    "main",
+    "slideshow_f4cwni",
+    "1764501366df2f3619",
+    "featured_collection_BGGntR",
+    "related-products",
+    "logo_list_64xUBh",
+    "1764501044402347a6",
+    "collapsible_tabs_aBFypJ",
+    "multi_column_JrtTBz"
+  ]
+}

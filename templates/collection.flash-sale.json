@@ -1,0 +1,107 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "countdown_timer_9NNtk9": {
+      "type": "countdown-timer",
+      "blocks": {
+        "heading_C4UHVM": {
+          "type": "heading",
+          "settings": {
+            "title": "Flash Sale⚡️25% OFF",
+            "use_h1": false
+          }
+        },
+        "text_rCVjfj": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Grab your favorites before the sale ends!</p>",
+            "enlarge_text": true
+          }
+        },
+        "countdown_A3ifhB": {
+          "type": "countdown",
+          "settings": {
+            "end_date": "",
+            "end_time": "",
+            "end_text": "",
+            "hide_on_end": false,
+            "number_size": 60,
+            "number_font": "base",
+            "divider_type": "colon",
+            "show_timer_labels": true
+          }
+        }
+      },
+      "block_order": [
+        "heading_C4UHVM",
+        "text_rCVjfj",
+        "countdown_A3ifhB"
+      ],
+      "name": "Countdown timer",
+      "settings": {
+        "show_image": false,
+        "image_link": "",
+        "show_image_space": false,
+        "image_position": "left",
+        "text_alignment": "left",
+        "color_scheme": "1"
+      }
+    },
+    "main": {
+      "type": "main-collection",
+      "settings": {
+        "show_title": true,
+        "show_image_behind_heading": false,
+        "heading_image_height": "medium",
+        "overlay_style": "shadow",
+        "coll_desc_pos": "above",
+        "coll_num_per_page_int": 50,
+        "grid": 4,
+        "show_vendor": false,
+        "show_total": true,
+        "enable_filtering": true,
+        "collapse_tag_sidebar_by_default": false,
+        "collapse_filters_method": "over-12",
+        "show_filter_counts": false,
+        "filter_two_columns": true,
+        "button_grid_filter_name": "Size,Taille,Größe",
+        "auto_apply_hide_unavailable": false,
+        "enable_sticky_filter": true,
+        "show_sort": true,
+        "sort_show_featured": true,
+        "sort_show_best": true,
+        "sort_show_alpha": true,
+        "sort_show_price": true,
+        "sort_show_date": false,
+        "related_collections": [
+          "christmas-1",
+          "ugly-christmas-sweaters",
+          "christmas-short-sleeve-shirts",
+          "christmas-accessories",
+          "new-in-christmas",
+          "add-ons"
+        ],
+        "related_collections_style": "buttons",
+        "rel_coll_gall_aspect_ratio": "1",
+        "image_position": "center center",
+        "rel_coll_gall_enable_margin": true,
+        "rel_coll_gall_full_width": false,
+        "rel_coll_gall_overlay_style": "shadow",
+        "rel_coll_gall_text_alignment": "center center",
+        "rel_coll_grid_mobile": "2"
+      }
+    }
+  },
+  "order": [
+    "countdown_timer_9NNtk9",
+    "main"
+  ]
+}
