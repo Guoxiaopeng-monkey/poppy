@@ -150,7 +150,10 @@ Parameters:
 
           {%- if settings.quickbuy_style == 'button' -%}
             {%- unless no_quick_buy -%}
-              <a class="btn btn--secondary quickbuy-toggle" href="{{ product_url }}">{{ 'products.product.quick_buy' | t }}</a>
+              <a class="btn btn--secondary quickbuy-toggle" href="{{ product_url }}">
+                <span class="btn__text">{{ 'products.product.quick_buy' | t }}</span>
+                <span class="icon-container">{%- render 'icon-cart' -%}</span>
+              </a>
             {%- endunless -%}
           {%- endif -%}
         </div>
@@ -160,7 +163,10 @@ Parameters:
 
           {%- if settings.quickbuy_style == 'button' -%}
             {%- unless no_quick_buy -%}
-              <a class="btn btn--secondary quickbuy-toggle" href="{{ product_url }}">{{ 'products.product.quick_buy' | t }}</a>
+              <a class="btn btn--secondary quickbuy-toggle" href="{{ product_url }}">
+                <span class="btn__text">{{ 'products.product.quick_buy' | t }}</span>
+                <span class="icon-container">{%- render 'icon-cart' -%}</span>
+              </a>
             {%- endunless -%}
           {%- endif -%}
         </div>

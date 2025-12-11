@@ -2991,9 +2991,7 @@ if (theme.settings.quickbuyStyle !== 'off') {
       theme.addDelegateEventListener(document, 'click', '.quickbuy-toggle', (evt, delEl) => {
         const productUrl = delEl.href;
 
-        // Only show dropdown if screen is large enough for it to be useful
-        if (window.innerWidth >= 768) {
-          evt.preventDefault();
+        evt.preventDefault();
 
           // cancel current request if one exists
           if (theme.quickBuy.currentRequestAbortController) {
@@ -3139,7 +3137,6 @@ if (theme.settings.quickbuyStyle !== 'off') {
             closeButton.setAttribute('aria-hidden', true);
             closeButton.removeEventListener('click', theme.quickBuy.onCloseClick);
           }
-        }
       });
     },
 
