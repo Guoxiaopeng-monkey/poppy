@@ -1,0 +1,269 @@
+{% if product.metafields.custom.size_chart_info != blank %}
+  {% assign size_chart = product.metafields.custom.size_chart_info %}
+{% elsif size_chart_metaobject != blank %}
+  {% assign size_chart = size_chart_metaobject %}
+{% else %}
+  {% assign size_chart = settings.size_chart_metaobject %}
+{% endif %}
+
+{% assign inch_info = size_chart.inch_info %}
+{% assign inch_info_mb = size_chart.inch_info_mb %}
+{% assign cm_info = size_chart.cm_info %}
+{% assign cm_info_mb = size_chart.cm_info_mb %}
+{% assign measuring_tips = size_chart.measuring_tips %}
+{% assign measuring_tips_mb = size_chart.measuring_tips_mb %}
+{% assign example_info = size_chart.example_info %}
+{% assign example_info_mb = size_chart.example_info_mb %}
+
+<style>
+  .size-chart-btn {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    color: #000;
+  }
+  .size-chart-btn svg {
+    width: 20px;
+    height: 20px;
+    margin-right: 10px;
+  }
+  .size-chart-tabs {
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+  }
+  .size-chart-tab {
+    display: inline-block;
+    padding: 12px 20px;
+    cursor: pointer;
+    border-bottom: 2px solid transparent;
+    transition: all 0.3s ease;
+    font-weight: 500;
+    background-color: #f5f5f5;
+  }
+  .size-chart-tab:hover {
+    opacity: 0.7;
+  }
+  .size-chart-tab.active {
+    font-weight: 600;
+    background-color: #8b3212;
+    color: #fff;
+  }
+  .size-chart-content__item {
+    display: none;
+  }
+  .size-chart-content__item.active {
+    display: block;
+  }
+  .size-charts-units-tabs {
+    display: flex;
+    gap: 20px;
+    margin-bottom: 20px;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+  }
+  .size-charts-units-tab {
+    padding: 12px 0;
+    cursor: pointer;
+    border-bottom: 2px solid transparent;
+    transition: all 0.3s ease;
+    font-weight: 500;
+  }
+  .size-charts-units-tab:hover {
+    opacity: 0.7;
+  }
+  .size-charts-units-tab.active {
+    border-bottom-color: #000;
+    font-weight: 600;
+  }
+  .size-charts-units-content__item {
+    display: none;
+  }
+  .size-charts-units-content__item.active {
+    display: block;
+  }
+</style>
+
+<modal-opener data-modal="size-chart-block-{{ product.id }}-{{ section.id }}">
+  <button type="button" class="size-chart-btn" aria-haspopup="dialog">
+    {{ 'icon-size.svg' | inline_asset_content }}
+    <span class="size-chart-btn__text">Size chart</span>
+  </button>
+</modal-opener>
+
+<modal-dialog
+  class="modal modal--for-product invisible fixed top-0 left-0 w-full h-full flex items-center justify-center"
+  id="size-chart-block-{{ product.id }}-{{ section.id }}"
+  role="dialog"
+  aria-label="Size Chart"
+  aria-modal="true"
+  tabindex="-1"
+>
+  <div class="modal__window relative bg-theme-bg text-theme-text text-start overflow-hidden has-motion">
+    <button type="button" class="modal__close-btn absolute js-close-modal">
+      {% render 'icon-close' %}
+      <span class="visually-hidden">{{ 'accessibility.close' | t }}</span>
+    </button>
+    <div class="modal__content flex-auto h-full rte">
+      <div class="size-chart-tabs flex">
+        {% if inch_info != blank or cm_info != blank %}
+          <div
+            class="size-chart-tab{% if inch_info != blank or cm_info != blank %} active{% endif %}"
+            data-tab="size-charts"
+          >
+            Size Charts
+          </div>
+        {% endif %}
+        {% if measuring_tips != blank %}
+          <div
+            class="size-chart-tab {% unless inch_info != blank or cm_info != blank %} {% if measuring_tips != blank %} active{% endif %}{% endunless %}"
+            data-tab="measuring-tips"
+          >
+            Measuring Tips
+          </div>
+        {% endif %}
+        {% if example_info != blank %}
+          <div
+            class="size-chart-tab {% unless inch_info != blank or cm_info != blank or measuring_tips != blank %} {% if example_info != blank %} active{% endif %}{% endunless %}"
+            data-tab="fitting-guide"
+          >
+            Fitting Guide
+          </div>
+        {% endif %}
+      </div>
+      <div class="size-chart-content">
+        {% if inch_info != blank or cm_info != blank %}
+          <div class="size-chart-content__item{% if inch_info != blank or cm_info != blank %} active{% endif %}" data-tab="size-charts">
+            <div class="size-charts-units-tabs">
+              {% if inch_info != blank %}
+                <div class="size-charts-units-tab {% if inch_info != blank %} active{% endif %}" data-tab="inch">Inch</div>
+              {% endif %}
+              {% if cm_info != blank %}
+                <div class="size-charts-units-tab {% unless inch_info != blank %} {% if cm_info != blank %} active{% endif %}{% endunless %}" data-tab="cm">Cm</div>
+              {% endif %}
+            </div>
+            <div class="size-charts-units-content">
+              {% if inch_info != blank %}
+                <div class="size-charts-units-content__item{% if inch_info != blank %} active{% endif %}" data-tab="inch">
+                  inch content
+                  <picture>
+                    <source srcset="{{ inch_info_mb | image_url: width: 1000 }}" media="(max-width: 768px)">
+                    <img
+                      src="{{ inch_info | image_url: width: 1000 }}"
+                      alt="{{ inch_info.alt }}"
+                      width="100%"
+                      height="100%"
+                    >
+                  </picture>
+                </div>
+              {% endif %}
+              {% if cm_info != blank %}
+                <div class="size-charts-units-content__item{% unless inch_info != blank %} {% if cm_info != blank %} active{% endif %}{% endunless %}" data-tab="cm">
+                  cm content
+                  <picture>
+                    <source srcset="{{ cm_info_mb | image_url: width: 1000 }}" media="(max-width: 768px)">
+                    <img
+                      src="{{ cm_info | image_url: width: 1000 }}"
+                      alt="{{ cm_info.alt }}"
+                      width="100%"
+                      height="100%"
+                    >
+                  </picture>
+                </div>
+              {% endif %}
+            </div>
+          </div>
+        {% endif %}
+        {% if measuring_tips != blank %}
+          <div class="size-chart-content__item {% unless inch_info != blank or cm_info != blank %} {% if measuring_tips != blank %} active{% endif %}{% endunless %}" data-tab="measuring-tips">
+            measuring tips content
+            <picture>
+              <source srcset="{{ measuring_tips_mb | image_url: width: 1000 }}" media="(max-width: 768px)">
+              <img
+                src="{{ measuring_tips | image_url: width: 1000 }}"
+                alt="{{ measuring_tips.alt }}"
+                width="100%"
+                height="100%"
+              >
+            </picture>
+          </div>
+        {% endif %}
+        {% if example_info != blank %}
+          <div class="size-chart-content__item {% unless inch_info != blank or cm_info != blank or measuring_tips != blank %} {% if example_info != blank %} active{% endif %}{% endunless %}" data-tab="fitting-guide">
+            fitting guide content
+            <picture>
+              <source srcset="{{ example_info_mb | image_url: width: 1000 }}" media="(max-width: 768px)">
+              <img
+                src="{{ example_info | image_url: width: 1000 }}"
+                alt="{{ example_info.alt }}"
+                width="100%"
+                height="100%"
+              >
+            </picture>
+          </div>
+        {% endif %}
+      </div>
+    </div>
+  </div>
+</modal-dialog>
+
+<script>
+  (function () {
+    const modalId = 'size-chart-block-{{ product.id }}-{{ section.id }}';
+    const modal = document.getElementById(modalId);
+
+    if (!modal) return;
+
+    const tabs = modal.querySelectorAll('.size-chart-tab');
+    const contentItems = modal.querySelectorAll('.size-chart-content__item');
+
+    tabs.forEach((tab) => {
+      tab.addEventListener('click', function () {
+        const targetTab = this.getAttribute('data-tab');
+
+        // 移除所有 tab 的 active 类
+        tabs.forEach((t) => t.classList.remove('active'));
+        // 添加当前 tab 的 active 类
+        this.classList.add('active');
+
+        // 隐藏所有内容项
+        contentItems.forEach((item) => {
+          item.classList.remove('active');
+        });
+
+        // 显示对应的内容项
+        const targetContent = modal.querySelector(`.size-chart-content__item[data-tab="${targetTab}"]`);
+        if (targetContent) {
+          targetContent.classList.add('active');
+        }
+      });
+    });
+
+    // 处理 size-charts-units-tab 的点击切换
+    const unitsTabs = modal.querySelectorAll('.size-charts-units-tab');
+    const unitsContentItems = modal.querySelectorAll('.size-charts-units-content__item');
+
+    unitsTabs.forEach((tab) => {
+      tab.addEventListener('click', function () {
+        const targetTab = this.getAttribute('data-tab');
+
+        // 移除所有 units tab 的 active 类
+        unitsTabs.forEach((t) => t.classList.remove('active'));
+        // 添加当前 tab 的 active 类
+        this.classList.add('active');
+
+        // 隐藏所有 units 内容项
+        unitsContentItems.forEach((item) => {
+          item.classList.remove('active');
+        });
+
+        // 显示对应的内容项
+        const targetContent = modal.querySelector(`.size-charts-units-content__item[data-tab="${targetTab}"]`);
+        if (targetContent) {
+          targetContent.classList.add('active');
+        }
+      });
+    });
+  })();
+</script>

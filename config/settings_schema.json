@@ -1050,6 +1050,17 @@
     ]
   },
   {
+    "name": "Size Chart",
+    "settings": [
+      {
+        "type": "metaobject",
+        "id": "size_chart_metaobject",
+        "label": "Size chart",
+        "metaobject_type": "size_chart_info"
+      }
+    ]
+  },
+  {
     "name": "Swatches",
     "settings": [
       {

@@ -1038,7 +1038,9 @@
               %}
             </div>
 
-        {% endcase %}
+          {% when 'size-chart' %}
+              {% render 'size-chart', size_chart_metaobject: block.settings.size_chart_metaobject %}
+          {% endcase %}
       {% endfor %}
 
       <div class="lightish-spaced-row-above only-in-quickbuy">
@@ -3770,6 +3772,18 @@
           "id": "show_in_quickbuy",
           "label": "Show in quick buy",
           "default": false
+        }
+      ]
+    },
+    {
+      "type": "size-chart",
+      "name": "Size chart",
+      "settings": [
+        {
+          "type": "metaobject",
+          "id": "size_chart_metaobject",
+          "label": "Size chart",
+          "metaobject_type": "size_chart_info"
         }
       ]
     }
